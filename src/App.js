@@ -14,7 +14,7 @@ import MobileApp from "components/MobileApp";
 function App() {
   return (
     <>
-    selam
+      
       <Header/>
       <HeroSection/>
       <Categories/>
