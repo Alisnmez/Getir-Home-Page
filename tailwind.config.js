@@ -9,6 +9,9 @@ module.exports = {
         'secondary-brand-color': '#7849f7',
         'brand-yellow':'#ffd300',
       },
+      backgroundImage: {
+        'mobile-app':"url('https://cdn.getir.com/getirweb-images/common/illustration/doodle.png')"
+      }
     },
   },
   plugins: [],
