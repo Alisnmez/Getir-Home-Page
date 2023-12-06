@@ -12,7 +12,9 @@
         
     }
 }
-
+.flag-select {
+    @apply !pb-0
+}
 .flag-select button{
     @apply h-14 border-2 border-gray-200 rounded-md transition-colors hover:border-primary-brand-color;
 }

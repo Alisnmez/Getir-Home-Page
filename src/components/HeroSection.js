@@ -28,9 +28,11 @@ function HeroSection() {
     dots: false,
     infinite: true,
     arrows: false,
-    speed: 500,
+    speed: 600,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -72,7 +74,8 @@ function HeroSection() {
           <h4 className="text-primary-brand-color text-center font-semibold mb-4">
             Giriş yap veya Kayıt ol
           </h4>
-          <div className="flex gap-x-2">
+         <div className="grid gap-3">
+         <div className="flex gap-x-2">
             <ReactFlagsSelect
               countries={Object.keys(phones)}
               customLabels={phones}
@@ -81,10 +84,13 @@ function HeroSection() {
               selected={selected}
               className="flag-select bg-white"
             />
-            <div className="flex-1">
-              <input className="h-14 px-4 border-2 border-gray-200 rounded-lg w-full transition-color hover:border-primary-brand-color focus:border-primary-brand-color outline-none" type="text" />
-            </div>
+            <label className="flex-1 relative">
+              <input required className="h-14 px-4 border-2 border-gray-200 rounded-lg w-full transition-color hover:border-primary-brand-color focus:border-primary-brand-color outline-none peer text-sm pt-1"  type="text" />
+              <span className="absolute inset-0 h-full flex items-center px-4 text-sm text-gray-500 peer-focus:h-7 peer-focus:text-primary-brand-color  peer-focus:text-xs transition-all peer-valid:h-7 peer-valid:text-primary-brand-color  peer-valid:text-xs" >Telefon Numarası</span>
+            </label>
           </div>
+          <button className="bg-brand-yellow h-12 flex items-center justify-center rounded-md w-full text-primary-brand-color transition-colors text-sm font-semibold hover:bg-primary-brand-color hover:text-brand-yellow">Telefon numarası ile devam et</button>
+         </div>
         </div>
       </div>
     </div>
