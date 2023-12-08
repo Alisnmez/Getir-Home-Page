@@ -16,8 +16,10 @@ function App() {
       <Header/>
       <HeroSection/>
       <Categories/>
+      <div className="container mx-auto gap-y-6 ">
       <MobileApp/>
       <Cards/>
+      </div>
       <Footer/>
     
     </>
